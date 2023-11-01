@@ -22,11 +22,11 @@ public class PlayerJump : MonoBehaviour
     ////////////////////////////////////////////////////////////////////////////
 
     //Speed (and therefore height) that the player jumps.
-    private float JumpSpeed = 10.0f; //A fairly reasonable value
+    public float JumpSpeed = 10.0f; //A fairly reasonable value
 
     //Gravity strength. Make this higher (along with increasing the
     //jump speed) to make the player feel less "floaty".
-    private float Gravity = 20.0f; //A fairly reasonable value
+    public float Gravity = 50.0f; //A fairly reasonable value
 
     //Maximum slope that can be walked up or jumped on
     private float SlopeLimit = 60.0f;

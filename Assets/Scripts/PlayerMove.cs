@@ -23,6 +23,7 @@ Description:
 *******************************************************************************/
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
@@ -35,22 +36,25 @@ public class PlayerMove : MonoBehaviour
     public float MoveSpeed = 10.0f; //A fairly reasonable value
     //Speed that the player rotates (degrees per second)
     private float RotateSpeed = 150.0f; //A fairly reasonable value
-
     ////////////////////////////////////////////////////////////////////////////
 
     //A reference to the ground detector
     PlayerJump GroundDetector;
+    Rigidbody rigidbody;
 
     //Start is called before the first frame update
     void Start()
     {
         //Save the ground detector
         GroundDetector = GameObject.Find("GroundDetector").GetComponent<PlayerJump>();
+        rigidbody = GetComponentInParent<Rigidbody>();
     }
 
     //Fixed update is called once per physics update
     void FixedUpdate()
     {
+        
+
         //Rotate player around the Y axis
         if (Input.GetKey(KeyCode.A))
             transform.Rotate(0.0f, -1.0f * RotateSpeed * Time.deltaTime, 0.0f, Space.Self);
@@ -72,7 +76,9 @@ public class PlayerMove : MonoBehaviour
 
         //If we aren't on the ground, don't mess with the velocity
         if (!GroundDetector.IsGrounded())
+        {
             return;
+        }
 
         //Adjust the speed if we are going up a slope
         float adjustedSpeed = MoveSpeed;
