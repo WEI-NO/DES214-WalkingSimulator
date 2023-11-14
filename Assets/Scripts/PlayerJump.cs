@@ -29,7 +29,7 @@ public class PlayerJump : MonoBehaviour
     public float Gravity = 50.0f; //A fairly reasonable value
 
     //Maximum slope that can be walked up or jumped on
-    private float SlopeLimit = 60.0f;
+    private float SlopeLimit = 90.0f;
 
     ////////////////////////////////////////////////////////////////////////////
 
