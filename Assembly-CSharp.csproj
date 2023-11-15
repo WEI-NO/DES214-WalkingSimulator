@@ -60,6 +60,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\CameraHint.cs" />
     <Compile Include="Assets\Scripts\PlayerMove.cs" />
+    <Compile Include="Assets\SpawnPoint.cs" />
     <Compile Include="Assets\Scripts\CameraOcclusion.cs" />
     <Compile Include="Assets\Scripts\CameraYaw.cs" />
     <Compile Include="Assets\Scripts\SpecialOccluder.cs" />

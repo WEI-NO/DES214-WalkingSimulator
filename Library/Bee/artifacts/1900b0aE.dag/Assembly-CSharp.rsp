@@ -389,6 +389,7 @@
 "Assets/Scripts/PlayerJump.cs"
 "Assets/Scripts/PlayerMove.cs"
 "Assets/Scripts/SpecialOccluder.cs"
+"Assets/SpawnPoint.cs"
 -langversion:9.0
 
 /deterministic
