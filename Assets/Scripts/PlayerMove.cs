@@ -53,7 +53,7 @@ public class PlayerMove : MonoBehaviour
     //Fixed update is called once per physics update
     void FixedUpdate()
     {
-        
+        if (GameSequence.GamePaused) return;
 
         //Rotate player around the Y axis
         if (Input.GetKey(KeyCode.A))
