@@ -14,8 +14,8 @@ public class CameraMaster : MonoBehaviour
 {
     public static CameraMaster instance;
 
-    private const float DistanceToReturn = 0.25f;
-    private const float ReturnSpeed = 0.01f;
+    private const float DistanceToReturn = 0.01f;
+    private const float ReturnSpeed = 0.02f;
 
     public Camera playerCamera;
     public Camera cinematicCamera;

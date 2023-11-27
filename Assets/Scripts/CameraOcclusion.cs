@@ -26,7 +26,7 @@ public class CameraOcclusion : MonoBehaviour
     public void SetDefaultZoom(float distance) { DefaultZoom = distance; }
 
     //Maximum zoom distance
-    private float MaxZoom = 20.0f;
+    private float MaxZoom = 1000.0f;
     //Zoom distance at the player becomes transparent
     private float TransparentZoom = 0.45f;
     //Minimum zoom distance
